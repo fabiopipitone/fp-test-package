@@ -1,7 +1,7 @@
-from helpers.arguments_checkers import *
-from helpers.utility_functions import *
-from utils.TqdmLoggingHandler import TqdmLoggingHandler
-from utils.CustomLogger import CustomLogger
+from fp_test_package.helpers.arguments_checkers import *
+from fp_test_package.helpers.utility_functions import *
+from fp_test_package.utils.TqdmLoggingHandler import TqdmLoggingHandler
+from fp_test_package.utils.CustomLogger import CustomLogger
 from tqdm import *
 from time import sleep
 

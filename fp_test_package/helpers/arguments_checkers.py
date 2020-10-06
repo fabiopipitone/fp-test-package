@@ -1,7 +1,6 @@
 import argparse, sys, re, os
 import dateutil.parser as dateparser
 from dateutil import tz
-import pytz
 
 def fetch_arguments():
   ap = argparse.ArgumentParser()
