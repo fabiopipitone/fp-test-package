@@ -15,7 +15,7 @@ setup(
   packages = find_packages(), 
   entry_points ={ 
     'console_scripts': [ 
-      'fp_test_package = fp_test_package.py:main'
+      'fp_test_package = fp_test_package.fp_test_package:main'
     ] 
   }, 
   classifiers =( 
@@ -24,6 +24,6 @@ setup(
     "Operating System :: Linux", 
   ), 
   keywords ='test packaging fabiopipitone', 
-  install_requires = ['tqdm>=4.49.0'], 
+  install_requires = ['tqdm>=4.49.0', 'pandas>=1.1.2'], 
   zip_safe = False
 ) 
