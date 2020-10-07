@@ -1,6 +1,7 @@
 import argparse, sys, re, os
 import dateutil.parser as dateparser
 from dateutil import tz
+from .utility_functions import *
 
 def fetch_arguments():
   ap = argparse.ArgumentParser()
@@ -10,8 +11,8 @@ def fetch_arguments():
   return vars(ap.parse_args())
 
 def check_csv_valid_filename(filename):
-  if filename[-4:] != '.csv':
-    raise argparse.ArgumentTypeError(f"{filename} is not a valid path where to store the retrieved data. It must be a csv file")
+  if not is_csv(filename):
+    raise argparse.ArgumentTypeError(f"\n\n\t\"{filename}\" is not a valid path where to store the retrieved data. It must be a csv file")
   return filename
 
 def check_arguments_conflicts(args, log):
